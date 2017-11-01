@@ -66,11 +66,9 @@ module.exports = function(grunt) {
 <meta charset="utf-8">
 </head>
 <body>
-
 @@include('include/component.html', {
     "display" : "block"
-})
-  
+})  
 </body>
 </html>
 ```
