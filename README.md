@@ -55,7 +55,7 @@ module.exports = function(grunt) {
     
 ### 3. 적용 예시
 * include 선언파일 - src/html/tpls/exam.html
-  * 컴포넌트 태그 내에 제어할 내용이 필요한 경우, 선언 구문 내에 { "옵션명" : "옵션값" } 을 추가하여 선언하면 된다. 그렇지 않을 경우, @@include('include/component.html') 까지만 선언해주면 된다.
+    * 컴포넌트 태그 내에 제어할 내용이 필요한 경우, 선언 구문 내에 { "옵션명" : "옵션값" } 을 추가하여 선언하면 된다. 그렇지 않을 경우, @@include('include/component.html') 까지만 선언해주면 된다.
     
 ```html
 <!DOCTYPE html>
@@ -66,15 +66,16 @@ module.exports = function(grunt) {
 </head>
 <body>
 
-  @@include('include/component.html', {
+@@include('include/component.html', {
     "display" : "block"
-  })
+})
   
 </body>
 </html>
 ```
 
 * include 컴포넌트 파일 - src/html/tpls/include/component.html
+    * 컴포넌트 태그 내에 제어할 내용이 필요한 경우, @@ 기호 활용하여 옵션추가.
 ```html
 <div style="display:@@display">
     blah blah
