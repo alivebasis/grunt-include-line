@@ -76,9 +76,9 @@ module.exports = function(grunt) {
 
 * include 컴포넌트 파일 - src/html/tpls/include/component.html
 ```html
-  <div style="display:@@display">
+<div style="display:@@display">
     blah blah
-  </div>
+</div>
 ```
 
 * 결과파일 - src/html/exam.html
