@@ -75,7 +75,7 @@ module.exports = function(grunt) {
 ```
 
 * include 컴포넌트 파일 - src/html/tpls/include/component.html
-    * 컴포넌트 태그 내에 제어할 내용이 필요한 경우, @@ 기호를 활용하여 옵션추가!
+    * 컴포넌트 태그 내에 제어할 내용이 필요한 경우, @@ 기호를 활용하여 옵션추가!
 
 ```html
 <div style="display:@@display">
