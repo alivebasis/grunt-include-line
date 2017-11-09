@@ -7,7 +7,7 @@
 ## 적용방법
 
 ### 1. 작업환경 세팅
-* 라인플러스 ![template-mobile](https://git-dev.linecorp.com/UIT-KR-OS-Markup/template-mobile) clone후, Grunt 환경세팅을 완료한다. (라인플러스 가이드 참고)
+* 라인플러스 [template-mobile](http://naver.com) clone후, Grunt 환경세팅을 완료한다. (라인플러스 가이드 참고)
 
 ### 2. 폴더구조 세팅 (template-mobile 기준 / 아래 그림 참고)
 * src/html : include 완료된 결과 html 파일이 담긴 폴더
