@@ -7,7 +7,7 @@
 ## 적용방법
 
 ### 1. 작업환경 세팅
-* 라인플러스 template-mobile clone후, Grunt 환경세팅을 완료한다. (라인플러스 가이드 참고)
+* 라인플러스 ![template-mobile](https://git-dev.linecorp.com/UIT-KR-OS-Markup/template-mobile) clone후, Grunt 환경세팅을 완료한다. (라인플러스 가이드 참고)
 
 ### 2. 폴더구조 세팅 (template-mobile 기준 / 아래 그림 참고)
 * src/html : include 완료된 결과 html 파일이 담긴 폴더
@@ -26,36 +26,32 @@ npm install grunt-include-replace --save-dev
 * Gruntfile.js 내 관련 구문 추가
 ```javascript
 module.exports = function(grunt) {
-     grunt.initConfig({
-          watch: {
-          //---------- COPY START
-          includes: {
-               files: [
-                    '<%= prj.app %>/html/tpls/*.html',
-                    '<%= prj.app %>/html/include/*.html'
-               ],
-               tasks: [
-                    'includereplace',
-                    'prettify'
-               ]
-          }
-          //---------- COPY END
-          
-          ...
-          //--------- COPY START
-          includereplace: {
+    grunt.initConfig({
+        watch: {
+        //---------- COPY START
+        includes: {
+            files: [
+                '<%= prj.app %>/html/tpls/*.html',
+                '<%= prj.app %>/html/include/*.html'
+            ],
+            tasks: [
+                'includereplace',
+                'prettify'
+            ]
+        }
+        //---------- COPY END
+        ...
+        //--------- COPY START
+        includereplace: {
             dev: {
                 cwd: '<%= prj.app %>/html/tpls', // include 선언파일 폴더경로
                 src: '*.html', // 결과물파일 형식
                 dest: '<%= prj.app %>/html/', // 결과물파일 생성될 폴더경로
                 expand: true // 결과물파일 생성을 위한 구문
-             }
-          }
-     //---------- COPY END
-     }
-
-
-     });
+            }
+        }
+        //---------- COPY END
+    });
 };
 ```
     
