@@ -28,18 +28,18 @@ npm install grunt-include-replace --save-dev
 module.exports = function(grunt) {
     grunt.initConfig({
         watch: {
-        //---------- COPY START
-        includes: {
-            files: [
-                '<%= prj.app %>/html/tpls/*.html',
-                '<%= prj.app %>/html/include/*.html'
-            ],
-            tasks: [
-                'includereplace',
-                'prettify'
-            ]
-        }
-        //---------- COPY END
+            //---------- COPY START
+            includes: {
+                files: [
+                    '<%= prj.app %>/html/tpls/*.html',
+                    '<%= prj.app %>/html/include/*.html'
+                ],
+                tasks: [
+                    'includereplace',
+                    'prettify'
+                ]
+            }
+            //---------- COPY END
 
         //--------- COPY START
         includereplace: {
